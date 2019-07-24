@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
 
     private Collider2D myCollider;
 
+    private Animator myAnimator;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,8 @@ public class PlayerController : MonoBehaviour
         myRigidbody = GetComponent<Rigidbody2D>();
 
         myCollider = GetComponent<Collider2D>();
+
+        myAnimator = GetComponent<Animator>(); 
     }
 
     // Update is called once per frame
@@ -38,5 +41,8 @@ public class PlayerController : MonoBehaviour
                 myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, jumpForce);
             }
        }
+
+        myAnimator.SetFloat("Speed", myRigidbody.velocity.x);
+        myAnimator.SetBool("Grounded", grounded);
     }
 }
