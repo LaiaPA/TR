@@ -474,6 +474,7 @@ Transform:
   m_Children:
   - {fileID: 488162061}
   - {fileID: 1176739955}
+  - {fileID: 1471728551}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1215,6 +1216,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1471728550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1471728551}
+  - component: {fileID: 1471728552}
+  m_Layer: 8
+  m_Name: Catcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1471728551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471728550}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -6.09, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 519420032}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1471728552
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471728550}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 34.25, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1546408876
 GameObject:
   m_ObjectHideFlags: 0
@@ -1733,7 +1791,11 @@ MonoBehaviour:
   distanceBetween: 5e+13
   distanceBetweenMin: 1
   distanceBetweenMax: 10
-  theObjectPool: {fileID: 1049640010}
+  thePlatforms:
+  - {fileID: 6467129873208155328, guid: e9e24021af0a8ab40ba58e41306dd1e6, type: 3}
+  - {fileID: 7449994324523567589, guid: 92e55a6dd10fca647827c8f7c18618b2, type: 3}
+  - {fileID: 2666403524314816430, guid: 9bbab6e3e1a3d9447b63a044404b06cf, type: 3}
+  - {fileID: 3715406871246413092, guid: f1a646cf6531e6841af5b3026a54996f, type: 3}
 --- !u!4 &1977039542
 Transform:
   m_ObjectHideFlags: 0
