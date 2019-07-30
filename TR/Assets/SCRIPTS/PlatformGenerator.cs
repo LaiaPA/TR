@@ -57,7 +57,7 @@ public class PlatformGenerator : MonoBehaviour {
             if (heightChange > maxHeight)
             {
                 heightChange = maxHeight;
-            } else if (heightChange > minHeight)
+            } else if (heightChange < minHeight)
             {
                 heightChange = minHeight;
             }
