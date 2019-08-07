@@ -2494,7 +2494,7 @@ MonoBehaviour:
   - {fileID: 669850349}
   - {fileID: 785982422}
   maxHeightPoint: {fileID: 2000013956}
-  maxHeightChange: 3
+  maxHeightChange: 10
   randomCoinThreshold: 75
 --- !u!4 &1977039542
 Transform:
@@ -2504,7 +2504,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1977039540}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.69, y: -4.01, z: 0}
+  m_LocalPosition: {x: 9.31, y: -3.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2000013956}
