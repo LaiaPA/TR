@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour {
         }
 
         thePlayer.transform.position = playerStartPoint;
-        platformGenerator.position = playerStartPoint;
+        platformGenerator.position = platformStartPoint;
         thePlayer.gameObject.SetActive(true);
 
         theScoreManager.scoreCount = 0;
